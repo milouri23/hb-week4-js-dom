@@ -11,6 +11,7 @@
     IMAGE: 'gallery__image',
     DOTS_CONTAINER: 'gallery__dots-container',
     IMAGES_CONTAINER: 'gallery__images-container',
+    ARROW_CONTAINER: 'gallery__arrow-container',
     ARROW_LEFT: 'gallery__arrow--left',
     ARROW_RIGHT: 'gallery__arrow--right'
   }
@@ -52,6 +53,7 @@
   let currentIndex = 0
   // Filling and extracting DOM Elements
   gallery.innerHTML = FIXED_HTML
+  // const arrowContainer = gallery.querySelector(`.${CLASSES.ARROW_CONTAINER}`)
   const leftArrow = gallery.querySelector(`.${CLASSES.ARROW_LEFT}`)
   const rightArrow = gallery.querySelector(`.${CLASSES.ARROW_RIGHT}`)
   const imagesContainer = gallery.querySelector(`.${CLASSES.IMAGES_CONTAINER}`)
@@ -113,14 +115,14 @@
     const isFirst = (currentIndex === 0)
     const isLast = (currentIndex === images.length - 1)
 
-    leftArrow.classList.remove(STATES.ARROW_DISABLED)
-    rightArrow.classList.remove(STATES.ARROW_DISABLED)
+    leftArrow.parentElement.classList.remove(STATES.ARROW_DISABLED)
+    rightArrow.parentElement.classList.remove(STATES.ARROW_DISABLED)
 
     if (isFirst) {
-      leftArrow.classList.add(STATES.ARROW_DISABLED)
+      leftArrow.parentElement.classList.add(STATES.ARROW_DISABLED)
     }
     if (isLast) {
-      rightArrow.classList.add(STATES.ARROW_DISABLED)
+      rightArrow.parentElement.classList.add(STATES.ARROW_DISABLED)
     }
   }
 })()
