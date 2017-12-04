@@ -1,0 +1,42 @@
+{
+  "name": "hb-week4-js-dom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "serve": "http-server -c-1",
+    "build": "npm-run-all clean lint:** --parallel build:css copy:**",
+    "build:css": "node-sass src/index.scss public/style.css --output-style compressed",
+    "lint": "npm-run-all lint:**",
+    "lint:css": "stylelint 'src/**/*.scss' --syntax scss",
+    "lint:js": "standard 'src/**/*.js'",
+    "watch:html": "onchange 'src/**/*.html' -- npm run copy:html",
+    "watch:css": "npm run build:css -- -w --source-map true",
+    "watch:js": "onchange 'src/**/*.js' -- npm-run-all lint:js copy:js",
+    "copy:html": "copy 'src/**/*.html' public",
+    "copy:js": "copy 'src/**/*.js' public",
+    "copy:svg": "copy 'src/**/*.svg' public",
+    "precommit": "npm run lint",
+    "clean": "rm -rf public/",
+    "start:build": "npm-run-all build serve",
+    "start": "npm-run-all copy:** build:css --parallel watch:** serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy": "^0.3.1",
+    "http-server": "^0.10.0",
+    "husky": "^0.14.3",
+    "node-sass": "^4.7.2",
+    "npm-run-all": "^4.1.2",
+    "onchange": "^3.2.1",
+    "standard": "^10.0.3",
+    "stylelint": "^8.3.1",
+    "stylelint-config-recommended-scss": "^2.0.0",
+    "stylelint-scss": "^2.1.0"
+  },
+  "dependencies": {
+    "reset-css": "^2.2.1"
+  }
+}
