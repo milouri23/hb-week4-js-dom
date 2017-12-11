@@ -10,20 +10,23 @@
 	font-size: 0;
 	&__arrow {
 		&-container {
+			width: 40px;
+			height: 80px;
 			padding: 0;
 			border: none;
 			border-radius: 0;
-			background-color: inherit;
+			background-color: green;
+			color: black;
+			font-size: 80%;
 			cursor: pointer;
 			position: relative;
-			font-size: 0;
 		}
 		&--left, &--right {
-			width: 40px;
-			height: 80px;
+			//
 		}
 		&--disabled{
 			pointer-events: none;
+			background-color: rgba(0, 128,0, 0.2)
 		}
 	}
 	
@@ -35,6 +38,10 @@
 		opacity: 0;
 		&--selected {
 			opacity: 1;
+			-webkit-transition: opacity 1s ease-in-out;
+			-moz-transition: opacity 1s ease-in-out;
+			-o-transition: opacity 1s ease-in-out;
+			transition: opacity 1s ease-in-out;
 		}
 		&-container {
 			//
