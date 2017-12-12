@@ -1,5 +1,5 @@
 export class Movie {
   constructor (movieData) {
-    this.html = `<img src=${movieData.imgURL}, alt=${movieData.title}, data-category=${movieData.categoryID}>`
+    this.html = `<img class="movie__poster" src="${movieData.imgURL}" alt="${movieData.title} poster" data-categoryid="${movieData.categoryid}">`
   }
 }

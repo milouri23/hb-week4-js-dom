@@ -1,0 +1,19 @@
+.grid {
+	$item-width: 400px;
+	$item-height: 120px;
+	&__item {
+		&-container {
+			background-color: yellowgreen;
+			&--hidden {
+				display: none
+			}
+		}
+		&s-container {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(80px, 1fr));
+			grid-auto-rows: 240px;
+			grid-gap: 20px;
+			background-color: green;
+		}
+	}
+}
