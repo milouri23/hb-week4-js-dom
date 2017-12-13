@@ -3,7 +3,7 @@
 		cursor: pointer;
 		background-color: white;
 		&-container {
-			margin: 0 8px			
+			margin: 0 8px
 		}
 		&s-container {
 			width: 100%;
@@ -12,6 +12,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			overflow-x: scroll;
 		}
 		&--selected {
 			background-color: blueviolet;
