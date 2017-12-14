@@ -1,11 +1,13 @@
-import data from './movies/movieData.js'
-import { Movie } from './movies/movie.js'
-import { Grid } from './movies/grid.js'
-import { Caller } from './movies/caller.js'
+import data from './moviesData.js'
+
+import { Movie } from './components/movie/movie.js'
+import { Grid } from './components/grid/grid.js'
+import { Caller } from './components/caller/caller.js'
 
 const movies = data.map(movieData => new Movie(movieData))
-const grid = new Grid(document.querySelector('.grid'), movies)
-const caller = new Caller(document.querySelector('.caller'), extractNoRepeatedValues(data, 'categoryid'), callGridToAction)
+const grid = new Grid('.griddd', movies)
+const caller = new Caller('.callerrr', extractNoRepeatedValues(data, 'categoryid'), callGridToAction)
+
 caller.addButton('reset')
 caller.setEvents()
 

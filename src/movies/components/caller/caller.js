@@ -1,8 +1,9 @@
 export class Caller {
-  constructor (node, values, callback) {
-    this.node = node
+  constructor (selector, values, callback) {
+    this.node = document.querySelector(selector)
     this.elements = {}
     this.callback = callback
+    this.areEventsSet = false
 
     this.inflateHTML(values)
     this.setEvents()
@@ -32,6 +33,7 @@ export class Caller {
 
   inflateHTML (values) {
     console.log(values)
+    this.node.className = 'caller'
     this.node.innerHTML = Caller.FIXED_HTML
     this.elements.buttonsContainer = this.node.querySelector('.caller__buttons-container')
     this.elements.buttonsContainer.innerHTML = values.map(this.toButtonHTML).join('')
@@ -41,11 +43,15 @@ export class Caller {
   addButton (value) {
     this.elements.buttonsContainer.innerHTML += this.toButtonHTML(value)
     this.elements.buttons = this.node.querySelectorAll('.caller__button')
+    this.setEvents()
   }
 
   setEvents () {
-    this.elements.buttonsContainer.removeEventListener('click', this.buttonHandler.bind(this))
+    if (this.areEventsSet) {
+      this.elements.buttonsContainer.removeEventListener('click', this.buttonHandler.bind(this))
+    }
     this.elements.buttonsContainer.addEventListener('click', this.buttonHandler.bind(this))
+    this.areEventsSet = true
   }
 
   buttonHandler (event) {

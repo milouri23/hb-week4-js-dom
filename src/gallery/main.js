@@ -1,5 +1,5 @@
-import { Gallery } from './gallery/gallery.js'
-import data from './gallery/galleryData.js'
+import { Gallery } from './components/gallery/gallery.js'
+import data from './galleryData.js'
 
 const gallery = new Gallery(document.querySelector('.gallery'), 0)
 gallery.inflateHTML(data)

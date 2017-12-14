@@ -1,6 +1,6 @@
 export class Grid {
-  constructor (node, data) {
-    this.node = node
+  constructor (selector, data) {
+    this.node = document.querySelector(selector)
     this.elements = {}
 
     this.inflateGrid(data)
@@ -18,6 +18,7 @@ export class Grid {
   }
 
   inflateGrid (data) {
+    this.node.className = 'grid'
     this.node.innerHTML = Grid.FIXED_HTML
     this.elements.gridContainer = this.node.querySelector('.grid__items-container')
     this.elements.gridContainer.innerHTML = data.map(item =>

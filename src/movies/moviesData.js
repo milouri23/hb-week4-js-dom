@@ -8,14 +8,15 @@ export default [
   {title: 'The Purge: Election Year', year: '2016', category: 'Action', categoryid: 'action', imgURL: 'https://i.pinimg.com/originals/92/f7/04/92f7049b06be13ae2c45e9be15a57cd2.jpg', rating: '6.0/10', synopsis: 'Former Police Sergeant Barnes becomes head of security for Senator Charlie Roan, a Presidential candidate targeted for death on Purge night due to her vow to eliminate the Purge.'},
   {title: 'Blade Runner', year: '1982', category: 'Sci-Fi', categoryid: 'sci-fi', imgURL: 'http://barkerhost.com/wp-content/uploads/sites/4/2016/02/5ig0kdWz5kxR4PHjyCgyI5khCzd-1.jpg', rating: '8.2/10', synopsis: 'A blade runner must pursue and try to terminate four replicants who stole a ship in space and have returned to Earth to find their creator.'},
   {title: 'The Game Plan', year: '2007', category: 'Comedy', categoryid: 'comedy', imgURL: 'https://i.pinimg.com/originals/6d/be/45/6dbe45e9b217b1b54c20531fe62c468a.jpg', rating: '6.2/10', synopsis: 'An NFL quarterback living the bachelor lifestyle discovers that he has an 8-year-old daughter from a previous relationship.'},
-  {title: 'Chuky', category: 'Horror', categoryid: 'horror', imgURL: '___'},
+  {title: 'The Incredibles', year: '2004', category: 'Animation', categoryid: 'animation', imgURL: 'https://i.pinimg.com/originals/17/f6/ae/17f6aeb214940eaadf5754f19729d80d.jpg', rating: '8.0/10', synopsis: 'A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.'}
+  /* {title: 'Chuky', category: 'Horror', categoryid: 'horror', imgURL: '___'},
   {title: '50 shadows of gray', category: 'Other', categoryid: 'other', imgURL: '___'},
   {title: 'Another of drama', category: 'Drama', categoryid: 'drama', imgURL: '___'},
   {title: 'Anabelle', category: 'Horror', categoryid: 'horror', imgURL: '___'},
   {title: 'Crash', category: 'Adventure', categoryid: 'adventure', imgURL: '___'},
   {title: 'Resident Evil', category: 'Horror', categoryid: 'horror', imgURL: '___'},
   {title: 'Harry potter', category: 'Magic', categoryid: 'magic', imgURL: '___'},
-  {title: 'To the bone', category: 'Drama', categoryid: 'drama', imgURL: '___'}
+  {title: 'To the bone', category: 'Drama', categoryid: 'drama', imgURL: '___'} */
 ]
 
 /*
