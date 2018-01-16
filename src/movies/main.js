@@ -27,3 +27,5 @@ function callGridToAction ({textContent}) {
   }
   grid.hideGridItemByDataSet('categoryid', textContent)
 }
+
+// function callMovieToAction
