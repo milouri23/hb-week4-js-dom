@@ -10,15 +10,6 @@ export default [
   {title: 'The Game Plan', year: '2007', categoryid: 'comedy', imgURL: 'https://i.pinimg.com/originals/6d/be/45/6dbe45e9b217b1b54c20531fe62c468a.jpg', rating: '6.2  /  10', synopsis: 'An NFL quarterback living the bachelor lifestyle discovers that he has an 8-year-old daughter from a previous relationship.'},
   {title: 'The Incredibles', year: '2004', categoryid: 'animation', imgURL: 'https://i.pinimg.com/originals/17/f6/ae/17f6aeb214940eaadf5754f19729d80d.jpg', rating: '8.0  /  10', synopsis: 'A family of undercover superheroes, while trying to live the quiet suburban life, are forced into action to save the world.'},
   {title: 'Missing in Action 2: The Beginning', year: '1985', categoryid: 'action', imgURL: 'http://mitocadorcoreano.com/wp-content/uploads/2017/11/collection-of-solutions-missing-in-action-2-the-beginning-1985-posters-%E2%80%94-the-movie-for-missing-in-action-poster-of-missing-in-action-poster.jpg', rating: '5.2/10', synopsis: 'Prequel to the first Missing In Action, set in the early 1980s it shows the capture of Colonel Braddock during the Vietnam war in the 1970s, and his captivity with other American POWs in a brutal prison camp, and his plans to escape.'}
-
-  /* {title: 'Chuky', category: 'Horror', categoryid: 'horror', imgURL: '___'},
-  {title: '50 shadows of gray', category: 'Other', categoryid: 'other', imgURL: '___'},
-  {title: 'Another of drama', category: 'Drama', categoryid: 'drama', imgURL: '___'},
-  {title: 'Anabelle', category: 'Horror', categoryid: 'horror', imgURL: '___'},
-  {title: 'Crash', category: 'Adventure', categoryid: 'adventure', imgURL: '___'},
-  {title: 'Resident Evil', category: 'Horror', categoryid: 'horror', imgURL: '___'},
-  {title: 'Harry potter', category: 'Magic', categoryid: 'magic', imgURL: '___'},
-  {title: 'To the bone', category: 'Drama', categoryid: 'drama', imgURL: '___'} */
 ]
 
 /*
