@@ -8,6 +8,8 @@ export class Movie {
       </div>
       <div class="movie__back">
         <p class="movie__description">${movieData.synopsis}</p>
+        <br />
+        <h2 class="movie__title">${movieData.title}</h2>
       </div>
     </div>`
     /* eslint-disable */

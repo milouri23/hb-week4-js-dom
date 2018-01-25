@@ -13,19 +13,23 @@
 			transform: rotateY(-180deg);
 		}
 	}
-	&__title {
-		text-align: center;
-	}
 	&__poster {
 		height: 100%;
 		width: 100%;
 		object-fit: contain;
+	}
+	&__title {
+		text-align: center;
+		font-size: 1.2em;
 	}
 	&__back {
 		transform: rotateY(180deg);
 		&--turn {
 			transform: rotateY(0deg);
 		}
+	}
+	&__description {
+		color: white;
 	}
 
 }
