@@ -10,6 +10,8 @@ export class Movie {
         <p class="movie__description">${movieData.synopsis}</p>
         <br />
         <h2 class="movie__title">${movieData.title}</h2>
+        <br />
+        <p class="movie__rating">${movieData.rating}</p>
       </div>
     </div>`
     /* eslint-disable */

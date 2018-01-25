@@ -27,9 +27,14 @@
 		&--turn {
 			transform: rotateY(0deg);
 		}
+		background-color: inherit;
 	}
 	&__description {
 		color: white;
 	}
-
+	&__rating {
+		color: blue;
+		font-size: 1.4em;
+		text-align: center;
+	}
 }
