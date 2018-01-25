@@ -32,7 +32,6 @@ export class Caller {
   }
 
   inflateHTML (values) {
-    console.log(values)
     this.node.className = 'caller'
     this.node.innerHTML = Caller.FIXED_HTML
     this.elements.buttonsContainer = this.node.querySelector('.caller__buttons-container')

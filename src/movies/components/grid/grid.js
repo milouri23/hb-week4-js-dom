@@ -30,17 +30,12 @@ export class Grid {
       this.elements.itemContainers[index].appendChild(item)
     )
     this.elements.items = Array.from(this.elements.itemContainers).map(itemContainer => itemContainer.firstElementChild)
-    console.log('coming')
-    console.log(this.elements.items)
   }
 
   hideGridItemByDataSet (dataSetID, dataSetValue) {
     this.showEverything()
 
     this.elements.items.forEach(item => {
-      console.log(item.dataset[dataSetID])
-      console.log(dataSetValue)
-      console.log(item)
       if (item.dataset[dataSetID] !== dataSetValue) {
         item.parentElement.classList.add(Grid.MODIFIERS.HIDDEN)
       }
