@@ -4,7 +4,7 @@ import { Movie } from './components/movie/movie.js'
 import { Grid } from './components/grid/grid.js'
 import { Caller } from './components/caller/caller.js'
 
-const movies = data.map(movieData => new Movie(movieData))
+const movies = data.map(movieData => new Movie(movieData).node)
 const grid = new Grid('.griddd', movies)
 const caller = new Caller('.callerrr', extractNoRepeatedValues(data, 'categoryid'), callGridToAction)
 

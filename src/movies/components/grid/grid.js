@@ -23,10 +23,12 @@ export class Grid {
     this.elements.gridContainer = this.node.querySelector('.grid__items-container')
     this.elements.gridContainer.innerHTML = data.map(item =>
       `<li class="grid__item-container">
-        ${item.html}
       </li>`
     ).join('')
     this.elements.itemContainers = this.node.querySelectorAll('.grid__item-container')
+    data.forEach((item, index) =>
+      this.elements.itemContainers[index].appendChild(item)
+    )
     this.elements.items = Array.from(this.elements.itemContainers).map(itemContainer => itemContainer.firstElementChild)
     console.log('coming')
     console.log(this.elements.items)
